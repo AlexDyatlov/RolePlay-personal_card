@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+  </head>
+
+<body>
+  <header>
+
+</header>
+  <!-- WRITE CODE HERE -->
+  <main class="bank" style="background-image: url('images/bg.png');">
+    <div class="container">
+      <div class="bank__inner" style="background-image: url('images/item-bg.png');">
+        <div class="card__item" style="background-image: url('images/card-bg.png');">
+          <div class="card__item-logo" href="#">
+            <img src="images/logo.png" alt="">
+            <span>პირადი ბარათი</span>
+          </div>
+          <div class="card__item-box">
+            <div class="card__item-info">
+              4214 0000 0000 0000
+              <span class="card-title">
+                MIKE <span>ROBOX</span>
+              </span>
+            </div>
+            <div class="card__item-numbers">25/22</div>
+          </div>
+        </div>
+        <div class="bank__tabs">
+          <div class="bank__items tabs-wrapper">
+            <a class="tab bank__item" href="#tab-1">
+              <div class="bank__item-title icon-dollar">
+                თანხის მოხსნა
+                <span>ანგარიშიდან</span>
+              </div>
+              <img class="bank__item-arrow" src="images/icons/arrow-right.png" alt="">
+              <img class="bank__item-arrow--active" src="images/icons/arrow-click.png" alt="">
+            </a>
+            <a class="tab bank__item" href="#tab-2">
+              <div class="bank__item-title icon-dollar">
+                თანხის შეტანა
+                <span>ანგარიშზე</span>
+              </div>
+              <img class="bank__item-arrow" src="images/icons/arrow-right.png" alt="">
+              <img class="bank__item-arrow--active" src="images/icons/arrow-click.png" alt="">
+            </a>
+            <a class="tab bank__item" href="#tab-3">
+              <div class="bank__item-title icon-people">
+                თანხის სხვისთვის
+                <span>გადარიცხვა</span>
+              </div>
+              <img class="bank__item-arrow" src="images/icons/arrow-right.png" alt="">
+              <img class="bank__item-arrow--active" src="images/icons/arrow-click.png" alt="">
+            </a>
+            <a class="tab bank__item tab--active" href="#tab-4">
+              <div class="bank__item-title icon-house">
+                სახლის ანგარიში
+                <span>კომუნალური</span>
+              </div>
+              <img class="bank__item-arrow" src="images/icons/arrow-right.png" alt="">
+              <img class="bank__item-arrow--active" src="images/icons/arrow-click.png" alt="">
+            </a>
+            <a class="tab bank__item" href="#tab-5">
+              <div class="bank__item-title icon-man">
+                ბიზნესის
+                <span>გადასახადი</span>
+              </div>
+              <img class="bank__item-arrow" src="images/icons/arrow-right.png" alt="">
+              <img class="bank__item-arrow--active" src="images/icons/arrow-click.png" alt="">
+            </a>
+          </div>
+          <div class="tab_content">
+            <div id="tab-1" class="tabs-content">
+              <form class="balance__form">
+                <div class="balance__form-title">
+                  თქვენს ანგარიშზეა: 531214$
+                </div>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn balance__output-btn" type="submit">გამოტანა</button>
+              </form>
+            </div>
+            <div id="tab-2" class="tabs-content">
+              <form class="balance__form">
+                <div class="balance__form-title">
+                  თქვენს ანგარიშზეა: 531214$
+                </div>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn balance__output-btn" type="submit">გამოტანა</button>
+              </form>
+            </div>
+            <div id="tab-3" class="tabs-content">
+              <form class="balance__form">
+                <div class="balance__form-title">
+                  გადარიცხვა პირადი ნომრით
+                </div>
+                <input type="text" placeholder="">
+                <p class="balance__form-users">
+                  მომხმარებელი მოიძებნა:
+                </p>
+                <div class="balance__form-name">
+                  MIKE ROBOX
+                </div>
+                <a id="push" class="balance-btn balance__output-btn balance__transfer-btn tab" href="#tab-6">გადარიცხვა</a>
+              </form>
+            </div>
+            <div id="tab-4" class="tabs-content tabs-content--active">
+              <form class="balance__form">
+                <div class="balance__form-title">
+                  სახლის ანგარიშზეა: 5214$
+                </div>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn  balance__output-btn" type="submit">შეტანა</button>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn balance__output-btn" type="submit">გამოტანა</button>
+              </form>
+            </div>
+            <div id="tab-5" class="tabs-content">
+              <form class="balance__form">
+                <div class="balance__form-title">
+                  ბიზნესის ანგარიშზეა: 5214$
+                </div>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn  balance__output-btn" type="submit">შეტანა</button>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn balance__output-btn" type="submit">გამოტანა</button>
+              </form>
+            </div>
+            <div id="tab-6" class="tabs-content">
+              <form class="balance__form">
+                <div class="balance__form-title">
+                  თქვენს ანგარიშზეა: 531214$
+                </div>
+                <input type="number" min="0" placeholder="">
+                <button class="balance-btn balance__output-btn" type="submit">გამოტანა</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- STOP WRITE CODE -->
+  <footer>
+  
+</footer>
+  <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
